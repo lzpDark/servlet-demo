@@ -10,9 +10,19 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         <servlet-class>org.example.TestServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>xx</servlet-name>
+        <servlet-class>org.example.SampleServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/x</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>xx</servlet-name>
+        <url-pattern>/sample</url-pattern>
     </servlet-mapping>
 
 </web-app>

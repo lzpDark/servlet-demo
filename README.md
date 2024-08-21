@@ -7,15 +7,17 @@
 3. idea配置tomcat
    1. ![img.png](aseets/img.png)
    2. ![img_1.png](aseets/img_1.png)
-   3. ![img_2.png](aseets/img_2.png)
+   3. application context后如果加斜杠`/`可能会导致路由不到造成404 ![img_2.png](aseets/img_2.png)
    4. ![img_3.png](aseets/img_3.png)
 
-## 问题1
+## 问题
 
 tomcat版本和servlet版本需要兼容，我测试的时候用的tomcat9，
 所以servlet需要是这两个版本之一：
 - javax.servlet:servlet-api （猜测每种版本都可以？？）
 - jakarta.servlet-api:4.0.4 (版本升级到5后就有问题了)
+
+如果是使用tomcat10，需要依赖 `jakarta.servlet-api:5.0.0`
 
 
 参考：
